@@ -66,12 +66,12 @@ ifeq ($(WITH_HOST_DALVIK),true)
     include $(BUILD_SHARED_LIBRARY)
 endif
 
-# ssltest
-include $(CLEAR_VARS)
-include $(LOCAL_PATH)/../android-config.mk
-LOCAL_SRC_FILES:= ssltest.c
-LOCAL_C_INCLUDES += $(local_c_includes)
-LOCAL_SHARED_LIBRARIES := libssl libcrypto
-LOCAL_MODULE:= ssltest
-LOCAL_MODULE_TAGS := optional
-include $(BUILD_EXECUTABLE)
+# ssltest not compile
+#include $(CLEAR_VARS)
+#include $(LOCAL_PATH)/../android-config.mk
+#LOCAL_SRC_FILES:= ssltest.c
+#LOCAL_C_INCLUDES += $(local_c_includes)
+#LOCAL_SHARED_LIBRARIES := libssl libcrypto
+#LOCAL_MODULE:= ssltest
+#LOCAL_MODULE_TAGS := optional
+#include $(BUILD_EXECUTABLE)

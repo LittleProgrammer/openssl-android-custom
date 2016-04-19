@@ -522,13 +522,13 @@ endif
 ########################################
 # host static library, which is used by some SDK tools.
 
-include $(CLEAR_VARS)
-include $(LOCAL_PATH)/../android-config.mk
-LOCAL_SRC_FILES += $(local_src_files)
-LOCAL_CFLAGS += $(local_c_flags) -DPURIFY
-LOCAL_C_INCLUDES += $(local_c_includes)
-LOCAL_SRC_FILES += $(non_arm_src_files)
-LOCAL_LDLIBS += -ldl
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE:= libcrypto_static
-include $(BUILD_STATIC_LIBRARY)
+#include $(CLEAR_VARS)
+#include $(LOCAL_PATH)/../android-config.mk
+#LOCAL_SRC_FILES += $(local_src_files)
+#LOCAL_CFLAGS += $(local_c_flags) -DPURIFY
+#LOCAL_C_INCLUDES += $(local_c_includes)
+#LOCAL_SRC_FILES += $(non_arm_src_files)
+#LOCAL_LDLIBS += -ldl
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_MODULE:= libcrypto_static
+#include $(BUILD_STATIC_LIBRARY)
